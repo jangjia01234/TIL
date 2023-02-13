@@ -124,3 +124,24 @@
 <br>
 
 ---
+
+## Front Kickoff + Westa 안내 (Online)
+
+### 김명성 멘토님 (FE)
+
+<br>
+
+- 프론트엔드는 UI를 구현하는 것 뿐만 아니라 데이터를 연결하는 역할도 한다.
+- '내가 프론트엔드를 꼭 하고 싶은 이유' 하나씩은 가지고 있어야 한다.
+- 위코드에서는 html, css, js, react 까지 학습 -> 추후 기업협업에서 react-native, vue, flutter 등 추가적인 실습 가능
+- 개념을 100% 이해하려 하는 것보다는 직접 쳐보면서 실습하는 것을 우선순위로 두기
+
+<br>
+
+### Westagram 과제
+
+<br>
+
+- _Westudy -> Precourse -> 프론트엔드 세션 -> [[Project] Westagram](https://study.wecode.co.kr/session/29)_ 에서 과제 확인
+- 깃허브 [westagram-frontend](https://github.com/wecode-bootcamp-korea/westagram-frontend) 레포지토리에서 필수 구현항목 및 가이드 확인
+- 수요일(2/15) git 세션 예정이므로 그 전까지는 로컬에서 개발 진행
