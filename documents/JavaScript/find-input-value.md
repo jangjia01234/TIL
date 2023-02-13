@@ -20,6 +20,11 @@ loginPwInput.addEventListener("change", checkInput);
 
 ```
 
+코멘트
+- input 값에 change 이벤트가 감지되면 함수를 실행시켜준다는 점을 작성하는 데에 조금 시간이 걸렸다.
+- if문의 조건은 금방 작성했으나 event를 처음에는 keydown 으로 입력하는 등 헤매다가 change event를 발견하고 적용해봤더니 바로 잘 작동했다.
+- loginIdInput 부분에 오타가 있었다. 오타 각별히 주의하기!
+
 적용 화면 
 - input 값이 없을 때
 <img width="1128" alt="스크린샷 2023-02-13 오후 8 39 03" src="https://user-images.githubusercontent.com/71865277/218448455-48a60b45-fa72-4dd0-891b-5497878c280e.png">
