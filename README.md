@@ -16,6 +16,7 @@
 | ---------------------------------------------------- | --------------- | ------------------------------------------ |
 | <a href="mailto:﻿superman@test.com?subject=안녕하세요.">jangjia01234@gmail.com</a>  |      43기 장지아       | [@jangjia01234](https://github.com/jangjia01234)     |
 
+  <br>
 
 ## Contributing
 오타나 잘못된 부분이 있다면 Pull request 부탁드립니다 ☺️ 
