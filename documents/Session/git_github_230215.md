@@ -223,3 +223,10 @@ git push -u origin main (혹은 master)
     git merge [가져오고자 하는 브랜치명]
     git merge master
     ```
+    
+<br> 
+
+
+### [참고] 플로우 정리
+    
+<img width="1177" alt="스크린샷 2023-02-15 오후 5 26 51" src="https://user-images.githubusercontent.com/71865277/219003827-84da7d42-5f6b-4a0c-be27-c0f786842fb2.png">
