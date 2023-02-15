@@ -190,7 +190,10 @@ git push -u origin main (혹은 master)
     MODIFY : [수정한 사항]
     ```
 
+<br>
+
 - pull request(PR) 보내기
+
   - github 에서 **create & pull request** 버튼 클릭
   - pull request, 줄여서 PR 작성
   - 변경된 코드를 main branch에 병합하기 전에 확인하는 과정
@@ -198,3 +201,25 @@ git push -u origin main (혹은 master)
   - PR 템플릿에 맞춰 pull request 문서 작성
   - 우측 Label에서 상황에 맞는 라벨 선택
   - 위 과정 완료 후 **Create pull request** 클릭
+
+<br>
+
+- git pull 명령어
+  - mater 브랜치에 변경사항이 있을 때 최신 버전의 코드를 받을 수 있는 명령어
+    1. master 브랜치로 전환
+    ```c
+    git checkout master
+    ```
+    2. **git pull** 로 최신 버전 적용
+    ```c
+    git pull origin master
+    ```
+    3. 내 branch로 돌아오기
+    ```c
+    git checkout feature/43-jiajang
+    ```
+    4. **git merge**로 master 브랜치와 내 브랜치 합치기
+    ```c
+    git merge [가져오고자 하는 브랜치명]
+    git merge master
+    ```
