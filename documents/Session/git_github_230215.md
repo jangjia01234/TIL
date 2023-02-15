@@ -133,7 +133,7 @@ git push -u origin main (혹은 master)
   - 명령어: **git branch [브랜치 이름]**
 - git checkout
   - Linux의 cd와 유사한 명령어로, 다른 브랜치로 이동할 떄 사용
-  - ⚠️ 브랜치 생성 후 반드시 새로운 브랜치로 이동 작업해야 함
+  - ⚠️ 브랜치 생성 후 반드시 새로운 브랜치로 이동하여 작업해야 함
   - 명령어: **git checkout [브랜치 이름]**
 - git pull
   - 깃허브에 있는 특정 브랜치의 코드를 로컬로 가져올 떄 사용
