@@ -1,4 +1,4 @@
-## Database Session
+## Database Session 📝
 
 ### 강종범 멘토님 (BE)
 
