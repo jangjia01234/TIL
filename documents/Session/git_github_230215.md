@@ -2,7 +2,9 @@
 
 ### 김명성 멘토님 (FE)
 
-<br>
+<br><br>
+
+# 세션 1: Git & Github 입문
 
 ## 목차
 
@@ -110,3 +112,90 @@ git push -u origin main (혹은 master)
 ```
 
 -> 깃허브 레포지토리에서 잘 push 되었는지 확인
+
+<br><br><br>
+
+# 세션 2: Webstagram Github Kickoff
+
+## 목차
+
+1. git clone 명령어로 기존 프로젝트에 이어서 작업하기
+2. git branch, checkout, pull, merge 명령어로 기능별 독립된 작업 진행
+3. PR 메시지와 라벨 등을 통해 깃허브에서 다른 사용자와 의사소통하기
+
+<br>
+
+## 명령어
+
+- git clone
+  - 기존 레포지토리를 복제해서 내 로컬(컴퓨터)로 가져오기
+  - 명령어: **git clone [레포지토리 주소]**
+- git branch
+  - 독립적으로 개발 가능한 공간을 생성하는 명령어
+  - 명령어: **git branch [브랜치 이름]**
+- git checkout
+  - Linux의 cd와 유사한 명령어로, 다른 브랜치로 이동할 떄 사용
+  - ⚠️ 브랜치 생성 후 반드시 새로운 브랜치로 이동 후 작업해야 함
+  - 명령어: **git checkout [브랜치 이름]**
+- git pull
+  - 깃허브에 있는 특정 브랜치의 코드를 로컬로 가져올 떄 사용
+  - clone 과 pull 은 가져오는 대상이 다르다
+    - clone 은 레포지토리 전체의 코드를 가져옴, 내 컴퓨터에 해당 프로젝트의 코드가 없어서 전체를 가져올 때 사용
+    - pull 은 특정 브랜치에 있는 코드를 가져옴, 내 컴퓨터에 해당 프로젝트는 있지만, 그 중에서 특정 코드만 가져올 때 사용
+  - 명령어: **git pull origin [브랜치 이름]**
+- git merge
+
+  - 로컬에서 현재 브랜치의 코드와 특정 브랜치의 코드를 합칠 때 사용
+  - _특정 브랜치 코드 -> 현재 브랜치 코드_ 방향으로 병함됨
+  - 명령어: **git merge [브랜치 이름]**
+
+<br>
+
+## Westagram 실습
+
+<br>
+
+- westagram-frontend 레포지토리 메인 우상단의 초록색 code 버튼 클릭 -> HTTPS 하단의 주소 복사
+
+  ```c
+  git clone [복사한 주소]
+  ```
+
+- 터미널에서 현재 브랜치 확인 (나갈 때는 **q** 입력)
+  ```c
+  git branch
+  ```
+- 새로운 브랜치 만들기
+  ```c
+  git branch [새 브랜치 이름]
+  ```
+- 새로 생성한 브랜치로 이동
+  ```c
+  git checkout [이동하고자 하는 브랜치 이름]
+  ```
+- 파일 수정 후 아래 순서대로 진행
+  ```c
+  git add .
+  git status
+  git commit -m "커밋 메세지"
+  git log
+  git push origin [현재 브랜치 이름]
+  ```
+- [참고] 커밋 컨벤션 예시
+
+  - 새로 추가한 내용이 있을 때:
+    ```c
+    ADD : [추가한 사항]
+    ```
+  - 기존 파일을 수정했을 때:
+    ```c
+    MODIFY : [수정한 사항]
+    ```
+
+- github 에서 **create & pull request** 버튼 클릭
+  - pull request, 줄여서 PR 작성
+  - 변경된 코드를 main branch에 병합하기 전에 확인하는 과정
+  - 코드 리뷰 및 서비스의 완성도에 영향을 주므로 PR을 잘 작성하는 것이 중요함
+  - PR 템플릿에 맞춰 pull request 문서 작성
+  - 우측 Label에서 상황에 맞는 라벨 선택
+  - 위 과정 완료 후 **Create pull request** 클릭
