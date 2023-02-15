@@ -22,22 +22,20 @@
 - 누가 코드를 작성했는지 확인할 수 있다
 - 한 프로젝트를 두고 여러 개발자들이 협업할 수 있다
 
+<br>
+
 ## git vs. github
 
 - git: 프로젝트의 버전 관리를 도와주는 시스템
 - github: git을 이용해 버전관리를 한 프로젝트들을 관리하게 해주는 호스팅 서비스
 
-## git이란?
+### git이란?
 
 - git: version control system(vcs)
 - version: 어떤 프로그램을 수정, 개선하여 완성한 것, 이전과의 변화를 구분하는 표시
 - 수정사항이 있을 때마다 새로운 파일을 생성하는 대신, 하나의 파일에서 변화 이력을 기록으로 남기는 방식이 효율적임
 
-<br>
-
-<br>
-
-## github란?
+### github란?
 
 - git을 사용한 프로젝트들의 저장소
 - 개발자들의 소셜 네트워크
@@ -192,7 +190,8 @@ git push -u origin main (혹은 master)
     MODIFY : [수정한 사항]
     ```
 
-- github 에서 **create & pull request** 버튼 클릭
+- pull request(PR) 보내기
+  - github 에서 **create & pull request** 버튼 클릭
   - pull request, 줄여서 PR 작성
   - 변경된 코드를 main branch에 병합하기 전에 확인하는 과정
   - 코드 리뷰 및 서비스의 완성도에 영향을 주므로 PR을 잘 작성하는 것이 중요함
