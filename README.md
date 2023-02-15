@@ -19,4 +19,4 @@
   <br>
 
 ## Contributing
-오타나 잘못된 부분이 있다면 pull request 부탁드립니다 ☺️ 
+오타나 잘못된 부분, 혹은 추가 의견이 있다면 pull request 부탁드립니다 ☺️ 
