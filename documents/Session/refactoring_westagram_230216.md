@@ -8,8 +8,6 @@
 
 <br><br>
 
-## 목차
-
 1. git의 개념
 2. git과 github와의 차이
 3. git init, add, status, commit, log, push 명령어 사용
