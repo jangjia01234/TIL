@@ -4,7 +4,7 @@
 
 <br>
 
-> [Refactoring Checklist](https://study.wecode.co.kr/session/content/193)] 참고
+> [Refactoring Checklist](https://study.wecode.co.kr/session/content/193) 참고
 
 <br><br>
 
@@ -54,15 +54,15 @@
 
       - ❌: 부모요소의 높이를 미리 정해두고 자식요소의 크기를 정하는 top-down 방식
 
-      ```css
-      feedList {
-        height: 100vh;
-      }
+              ```css
+              feedList {
+                height: 100vh;
+              }
 
-      .feed {
-        height: 300px;
-      }
-      ```
+              .feed {
+                height: 300px;
+              }
+              ```
 
       - ⭕️: 자식요소의 높이에 따라 부모요소의 높이가 유동적으로 결정되는 bottom-up 방식
 
