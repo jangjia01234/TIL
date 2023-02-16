@@ -80,6 +80,7 @@
 ## (추가) Linux & git 명령어
 
 - 특정 폴더로 이동: **cd 폴더명**
+- 현재 경로 확인: **pwd**
 - 폴더 만들기: **mkdir 폴더명**
 - 파일 만들기: **touch 파일명**
 - 폴더 내 파일 확인: **ls**
@@ -91,7 +92,6 @@
   -> esc 눌러서 insert 모드 나가기
 - 저장하고 나가기: **:wq**
 - git log에서 나가기: **q**
-- (추가 공부) 현재 경로 확인: **pwd**
 - 연결하기: **git remote**
 - 현재 브랜치 확인: **git branch** -> 나가기: **q**
 
@@ -133,7 +133,7 @@ git push -u origin main (혹은 master)
   - 명령어: **git branch [브랜치 이름]**
 - git checkout
   - Linux의 cd와 유사한 명령어로, 다른 브랜치로 이동할 떄 사용
-  - ⚠️ 브랜치 생성 후 반드시 새로운 브랜치로 이동 후 작업해야 함
+  - ⚠️ 브랜치 생성 후 반드시 새로운 브랜치로 이동하여 작업해야 함
   - 명령어: **git checkout [브랜치 이름]**
 - git pull
   - 깃허브에 있는 특정 브랜치의 코드를 로컬로 가져올 떄 사용
@@ -224,7 +224,7 @@ git push -u origin main (혹은 master)
      ```
      <br>
 
-## 과제 피드백
+## 과제 리뷰
 
 <br>
 
@@ -233,3 +233,34 @@ git push -u origin main (혹은 master)
 - 기존 레포를 clone 해오면 이미 git init이 되어있기 때문에 따로 할 필요가 없다 -> 그래서 내가 여태까지 git init을 안했구나!
 - git push origin [브랜치 이름]
   -> origin [브랜치 이름] 은 긴 [브랜치 주소] 를 매번 작성할 필요 없이 가져올 수 있게 함
+
+  1. master 브랜치로 전환
+
+  ```c
+  git checkout master
+  ```
+
+  2. **git pull** 로 최신 버전 적용
+
+  ```c
+  git pull origin master
+  ```
+
+  3. 내 branch로 돌아오기
+
+  ```c
+  git checkout feature/43-jiajang
+  ```
+
+  4. **git merge**로 master 브랜치와 내 브랜치 합치기
+
+  ```c
+  git merge [가져오고자 하는 브랜치명]
+  git merge master
+  ```
+
+<br>
+
+### [참고] 플로우 정리
+
+<img width="1177" alt="스크린샷 2023-02-15 오후 5 26 51" src="https://user-images.githubusercontent.com/71865277/219003827-84da7d42-5f6b-4a0c-be27-c0f786842fb2.png">
