@@ -142,7 +142,6 @@ git push -u origin main (혹은 master)
     - pull 은 특정 브랜치에 있는 코드를 가져옴, 내 컴퓨터에 해당 프로젝트는 있지만, 그 중에서 특정 코드만 가져올 때 사용
   - 명령어: **git pull origin [브랜치 이름]**
 - git merge
-
   - 로컬에서 현재 브랜치의 코드와 특정 브랜치의 코드를 합칠 때 사용
   - _특정 브랜치 코드 -> 현재 브랜치 코드_ 방향으로 병함됨
   - 명령어: **git merge [브랜치 이름]**
@@ -206,20 +205,31 @@ git push -u origin main (혹은 master)
 
 - git pull 명령어
   - mater 브랜치에 변경사항이 있을 때 최신 버전의 코드를 받을 수 있는 명령어
-    1. master 브랜치로 전환
-    ```c
-    git checkout master
-    ```
-    2. **git pull** 로 최신 버전 적용
-    ```c
-    git pull origin master
-    ```
-    3. 내 branch로 돌아오기
-    ```c
-    git checkout feature/43-jiajang
-    ```
-    4. **git merge**로 master 브랜치와 내 브랜치 합치기
-    ```c
-    git merge [가져오고자 하는 브랜치명]
-    git merge master
-    ```
+  1. master 브랜치로 전환
+     ```c
+         git checkout master
+     ```
+  2. **git pull** 로 최신 버전 적용
+     ```c
+         git pull origin master
+     ```
+  3. 내 branch로 돌아오기
+     ```c
+        git checkout feature/43-jiajang
+     ```
+  4. **git merge**로 master 브랜치와 내 브랜치 합치기
+     ```c
+        git merge [가져오고자 하는 브랜치명]
+        git merge master
+     ```
+     <br>
+
+## 과제 피드백
+
+<br>
+
+### 복습
+
+- 기존 레포를 clone 해오면 이미 git init이 되어있기 때문에 따로 할 필요가 없다 -> 그래서 내가 여태까지 git init을 안했구나!
+- git push origin [브랜치 이름]
+  -> origin [브랜치 이름] 은 긴 [브랜치 주소] 를 매번 작성할 필요 없이 가져올 수 있게 함
