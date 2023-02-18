@@ -124,14 +124,12 @@
 
 > main.js
 
-- !input.value.length === 값이 없을 때
-- !input.value.length 가 값이 없다고 여겨지는 것은 0이 falsy로 여겨지기 때문? truthy/falsy 공부 필요
+- !input.value.length -> 값이 없을 때
+- truthy/falsy 추가로 공부하기
 - **template literal** :
-  <br> innerHTML = `안에 ${ }` 붙여가면서 html 태그 사용 가능
-  <br> 안에 ${ } 쓰면서 작성하는 것은 변수와 html 태그를 같이 쓰기 위함임
-- 태그 안에 텍스트는 innerText, 태그 자체를 innerHTML
-  <br>
-  -> 처음 안 것. 이걸로 js 코드 개선할 수 있겠다!
+  - innerHTML = 백틱 안에 ${ } 붙여가면서 html 태그 사용 가능
+  - ${ }는 변수와 html 태그를 같이 쓰기 위해 사용
+- 태그 안에 텍스트는 innerText, 태그 자체는 innerHTML
 - input 내용 비우기 -> input.value = ""
 - 이벤트리스너 이벤트에 input을 쓰셨다. 따로 알아보자!
 
