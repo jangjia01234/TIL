@@ -236,3 +236,117 @@
 <br>
 
 ---
+
+## Node.js & npm
+
+<br>
+
+### Node.js 과 npm
+
+- Node.js: 자바스크립트가 브라우저 밖에서도 동작하게 하는 js 실행환경
+- npm: Node.js 환경에서 사용할 수 있는 패키지들을 관리할 수 있는 도구(node package manager)
+- ex. Node.js는 iOS / npm은 iOS 프로그램을 관리하는 App Store
+
+<br>
+
+### 설치하기
+
+- LTS(Long Term Support) 버전 Node.js 설치 (mac은 HomeBrew로 설치 지양)
+- 설치 후 터미널에 node -v , npm -v 를 입력해 버전 확인
+
+<br>
+
+---
+
+## CRA
+
+<br>
+
+### CRA란?
+
+- Node.js: 자바스크립트가 브라우저 밖에서도 동작하게 하는 js 실행환경
+
+<br>
+
+### CRA 초기 세팅
+
+- 리액트 프로젝트 시작에 필요한 개발 환경 세팅 도구인 CRA로 프로젝트 구축
+- 초기 세팅 과정
+
+  - 터미널에서 프로젝트를 시작하고자 하는 폴더에 진입
+    ```c
+    cd [프로젝트를 구축하고자 하는 폴더]
+    ```
+  - 프로젝트 설치
+    ```c
+    npx create-react-app [프로젝트명]
+    ```
+  - 프로젝트 폴더 진입
+    ```c
+      cd [프로젝트명]
+    ```
+  - 로컬 서버 띄우기
+
+    ```c
+      npm start
+    ```
+
+  - 로컬 서버 확인
+    - 성공 메시지와 로컬 서버 주소(http://localhost:3000) 확인
+
+<br>
+
+### CRA를 통한 프로젝트 구축
+
+- CRA 초기 폴더 및 파일 구성
+  - public 폴더의 index.html, src 폴더의 index.js, package.json 를 제외한 파일은 데모를 위한 파일이므로 삭제 가능
+  - 이외에 폴더 및 파일은 프로젝트의 기획에 맞게 새롭게 구성
+- node_modules, .gitignore, package.json
+
+  - node_modules
+    - npm으로 다운받은 패키지들의 소스 코드가 존재하는 폴더
+    - 추가로 패키지를 설치할 때의 실제 코드는 node_modules 폴더 하위에 생성됨
+    - 많은 용량을 차지하는 node_modules는 .gitignore에 추가 -> Git과 Github를 통해 관리 X
+  - .gitignore
+    - 용량, 보안 등 여러가지 문제로 Github 에 올리지 않아야 하는 파일 추가
+  - package.json
+    - CRA 기본 패키지 외에 추가로 설치된 라이브러리 혹은 패키지의 종류, 버전 등의 정보가 기록되는 파일
+    - npm으로 설치하면, package.json의 dependencies에 라이브러리 혹은 패키지의 정보가 자동으로 추가됨
+      - dependencies
+        - npm을 통해서 설치한 모든 패키지 리스트와 버전 확인
+        - 관련된 패키지의 실제 코드는 node_modules 폴더에 존재
+      - scripts
+        - 리액트 프로젝트를 실행하기 위해서 사용할 수 있는 명령어 관리 (ex. npm (run) start, npm (run) build)
+      - package-lock.json
+        - npm을 사용해서 패키지를 설치하거나 업데이트하면 자동으로 생성되거나 수정되는 파일
+        - 설치된 패키지의 정확한 버전이 명시됨
+
+- index.html, index.js, App.js
+
+  - public/index.html
+
+    - public: 실제 서버에 배포되는 폴더
+    - 리액트에서는 index.html 파일을 직접 수정하는 것이 아니라, index.js 파일을 통해 index.html 파일의 id가 root인 div 내부에 코드를 추가하여 화면에 그려지게 됨
+
+  - src/index.js
+
+    - src: 개발에 사용되는 소스 파일을 모아두는 폴더
+    - src/index.js
+
+      - 리액트의 시작(Entry Point)이 되는 파일
+
+        ```js
+        import React from "react";
+        import ReactDOM from "react-dom/client";
+        import App from "./App";
+
+        const root = ReactDOM.createRoot(document.getElementById("root"));
+        root.render(<App />);
+        ```
+
+  - App.js
+    - CRA설치 후, 웹 애플리케이션의 첫 화면에 그려지는 파일
+    - 데모를 위한 초기 컴포넌트
+
+- README.md ([예시](https://github.com/wecode-bootcamp-korea/readme-collection/blob/main/project.md))
+  - 프로젝트에 대한 정보를 나타내기 위해 작성하는 파일
