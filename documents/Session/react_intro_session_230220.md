@@ -12,7 +12,7 @@
 - React가 무엇인지
   - Component의 개념과 종류
   - JSX에 대한 정의와 기본 특성
-- 어떻게 사용하는지에 대해서 알아보겠습니다.
+- 어떻게 사용하는지
   - CRA 설치
   - 폴더 및 파일 구조 세팅
 
@@ -350,3 +350,44 @@
 
 - README.md ([예시](https://github.com/wecode-bootcamp-korea/readme-collection/blob/main/project.md))
   - 프로젝트에 대한 정보를 나타내기 위해 작성하는 파일
+
+<br><br><br>
+
+# React Intro Session
+
+### 이정일 멘토님 (FE)
+
+<br>
+
+> [Westudy - React Intro](https://study.wecode.co.kr/session/113) 참고
+
+<br>
+
+- React를 쓰면 DOM을 조작할 일이 거의 없음 (선언적)
+  <br> -> document.querySelector 등등을 사용할 일이 없음
+
+- 컨텐츠가 없을 경우 Self closing tag로 만들어주기
+
+- 형제 관계만 남지 않게 하려고 부모 태그로 반드시 감싸줘야 하는데, 부모 태그가 p, span, div ... 무엇이든 될 수 있기 때문에, 부모 태그의 유형이 자식 태그에 영향을 미칠 수 있음.
+  <br>-> 이런 문제를 방지하고 아무런 영향을 안받는 부모 태그를 만들기 위해서 React.Fragment 사용
+  <br>-> 형제 태그만 남아야 하는데 다른 태그로 감쌌더니 문제가 될 때 사용
+  <br>-> 이미 부모와 자식 태그로 구성되어 있을 경우 필요 없음
+
+- 노드js: 자바스크립트를 서버에서도 사용할 수 있도록 만든 프로그램. 자바스크립트로 브라우저 밖에서 서버를 구축하는 등의 코드를 실행할 수 있게 함
+
+- 번들러(bundler): 여러 파일로 쪼개져있는 걸 하나로 합치는 역할
+
+- 이것만은 외워야 한다! :
+  - node_modules, .gitignore, package.json 사이의 상관관계
+    - node_modules는 dependencies에 나와있는 소스코드의 파일이 있는 폴더, .gitignore에 등록되어 있어서, 프로젝트를 클론받으면 npm i 해서 다운받아야 함. (이때 dependencies를 보고 node_modules가 필요한 것만 가져옴)
+  - index.html, index.js, app.js 사이의 상관관계
+
+<br>
+
+### 과제
+
+두 과제의 진행 방식이 다르니 주의하기!
+
+> 과제1: [react-assignment](https://github.com/wecode-bootcamp-korea/react-assginment/issues) 1-1, 1-2 완료하고 -> **해당 레포에 각각 PR** 날리기 -> clone 받아서 하는 것
+
+> 과제2: [foundation 과제](https://wecode.notion.site/Front-end-React-Intro-284c730456ca4a448c07eaa63691fd24) 1, 2번 완료하기 -> **구글 클래스룸에** 제출 -> 직접 처음부터 CRA로 세팅하는 것
