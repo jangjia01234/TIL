@@ -1,4 +1,4 @@
-# React Intro
+# React Intro Session
 
 ### 이정일 멘토님 (FE)
 
