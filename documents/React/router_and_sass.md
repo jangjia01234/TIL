@@ -188,9 +188,11 @@
       - 정리
         1. Link 컴포넌트
            - 클릭 시 바로 페이지를 이동하기 때문에, 조건 없이 페이지를 이동할 때 적합
+           - 내가 만든 페이지 내에서 이동
              <br> ex. Nav바 메뉴 혹은 Aside Menu 등 바로 페이지를 이동하는 경우
         2. useNavigate hook
-           - 조건에 따라 페이지를 전환해야 할 때 사용
+           - 조건에 따라 (외부) 페이지로 전환해야 할 때 사용
+           - 내가 만들지 않은 페이지로 이동하게 할 때 사용
              <br> ex. 로그인 버튼 클릭 시에 백엔드 API로 데이터를 전송하는 작업을 한 뒤 페이지를 이동하거나 userData의 인증 혹은 인가가 필요한 경우, 혹은 로그인 작업 이후 응답 메시지에 따른 분기 처리를
 
 <br>
@@ -290,3 +292,49 @@
     3. 브라우저가 읽을 수 있는 CSS 파일로 변환해 주는 CSS 전처리기
   - 기존 .css -> .scss로 변경하면 scss 문법 사용 가능
   - nesting, mixin 등 다양한 기능으로 편하게 스타일링 가능
+
+<br>
+
+---
+
+# [Session] Router & Sass
+
+### 김명성 멘토님(FE)
+
+<br>
+
+Link component vs a tag
+
+1. Link (컴포넌트)
+
+- 내가 만든 페이지 내에서 이동
+
+2. a tag
+
+- 내가 만들지 않은 페이지로 이동하게 할 때 사용
+
+<br>
+
+Link component vs a useNavigate hook
+
+1. Link (컴포넌트)
+
+- 조건 없이 바로 이동
+  <br> ex. Nav바 메뉴 혹은 Aside Menu 등 바로 페이지를 이동하는 경우
+
+2. useNavigate hook (함수)
+
+- '조건'에 따라 (외부) 페이지로 전환해야 할 때 사용
+  <br> ex. '로그인 버튼 클릭 시'에 백엔드 API로 데이터를 전송하는 작업을 한 뒤 페이지를 이동하거나 userData의 인증 혹은 인가가 필요한 경우
+
+  ```js
+  // 예시
+  const goToMain = () => {
+    if (response.message === "valid user") {
+      navigate("/main");
+    } else {
+      alert("가입된 회원이 아닙니다. 회원가입을 먼저 해주세요.");
+      navigate("/signup");
+    }
+  };
+  ```
