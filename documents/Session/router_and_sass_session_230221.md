@@ -338,3 +338,30 @@ Link component vs a useNavigate hook
     }
   };
   ```
+
+<br>
+
+# [Review] Router & Sass
+
+### import 할 때 중괄호 {} 를 쓰는 이유
+
+- 중괄호를 써주고 여부는 변수를 export 하는 방식에 따라 달라진다. (export default vs export)
+
+  - *export default*로 내보낸 변수는 중괄호 없이 받아올 수 있으며 변수명이 달라도 됨
+  - *export*로 내보내진 변수는 중괄호로 받아와야 하고 변수명이 동일해야 함
+
+  - 하나의 컴포넌트를 내보낼 때에는 컴포넌트 앞에 export를 붙여서 사용 가능, but 하나의 파일에서 하나의 컴포넌트를 만들면 export default 로 내보내기를 권장함
+
+<br>
+
+### a 태그 / Link 컴포넌트 / useNavigate 훅
+
+- a 태그: 외부 링크로 이동할 때 사용
+- Link 컴포넌트: 바로 특정 주소로 이동할 때 (데이터 받아오지 x)
+- useNavigate 훅: 데이터를 받아오거나 함수를 사용할 때 (ex. 로그인)
+
+<br>
+
+### 컴포넌트 작성 시 주의사항
+
+- 최상위 div 태그의 className은 컴포넌트 이름과 동일하게 (but, **소문자**로 시작) 작성해서 여기서부터 nesting 시작
