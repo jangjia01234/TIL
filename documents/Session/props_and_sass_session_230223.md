@@ -6,9 +6,7 @@
 
 > [Westudy - Props & State](https://study.wecode.co.kr/session/116) 참고
 
-<br><br>
-
----
+<br>
 
 - props 랑 state 중에서는 state가 더 중요한 개념
 - UI를 그릴 때 state가 중요한 역할을 함
