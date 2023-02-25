@@ -1,5 +1,7 @@
 # React Wrap-up
 
+### 이정일 멘토님(FE)
+
 <br>
 
 ### Lifecycle
