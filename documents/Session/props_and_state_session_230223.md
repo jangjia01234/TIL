@@ -122,7 +122,3 @@
   ```
 
 - prop는 부모로부터 전달받은 객체. color={colorname} 일 때 props의 key는 color -> props.color 형태로 사용
-
-<br>
-
-\*\*질문 : product 페이지에다가 컴포넌트를 붙였을 때는 잘 나오는데, 각각의 페이지에 가면 Text가 안보이는 이유가 뭔지? (부모 product로 옮기기 전까지는 잘 나왔음)
