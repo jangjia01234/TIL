@@ -94,3 +94,15 @@ useEffect(() => {
 - API: 통신을 할 때 프론트가 서버에게 데이터를 요청하는 주소
 - fetch("API 주소", {})
 - 연습은 codesandbox 활용하기
+
+<br>
+
+## Review
+
+side effect의 문제점 2가지
+
+- 위에서 아래로 읽다가 중간에 side effect가 있으면 '렌더링을 blocking(렌더링을 막는다)'함
+- 매번 렌더링이 될 때마다 side effect가 실행됨
+- 두 번째 인자인 **의존성 배열**이 빈 배열이면 최초 마운트 때만 실행이 됨
+- 의존성 배열이 없으면 매 렌더링 때마다 side effect 실행됨
+- state가 변하면 렌더링이 됨
