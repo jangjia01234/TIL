@@ -153,8 +153,12 @@
 <br>
 
 - React에서 side effect를 언제 발생시켜야 하는가?
+
   1. 렌더링이 모두 다 완료되고 난 후 실행 (렌더링을 Blocking 하지 않기 위해)
   2. 내가 원할 때만 조건부로 실행 (매 렌더링마다 실행 x)
+
+  <br>
+
 - 위 요구사항을 모두 충족하는 hook -> **useEffect**
 
 <br>
@@ -165,45 +169,46 @@
 
 ### useEffect 사용법
 
-```js
-import { useState, useEffect } from "react";
+<br>
 
-function Detail() {
-  useEffect(() => {
-    //여기적은 코드는 컴포넌트 로드 & 업데이트 마다 실행됨
-    console.log("안녕");
-  });
+- 아래와 같은 형태로 작성해서 사용한다
 
-  let [count, setCount] = useState(0);
-
-  return (
-    <button
-      onClick={() => {
-        setCount(count + 1);
-      }}
-    >
-      버튼
-    </button>
-  );
-}
-```
+  ```js
+  useEffect(() => {}, []);
+  ```
 
 <br>
 
-### 조건부로 Side Effect 발생시키기
+- 예시
 
-- 자식 컴포넌트에서의 전달받은 데이터 적용
+  ```js
+  import { useState, useEffect } from "react";
 
-<br>
+  function Detail() {
+    useEffect(() => {
+      //여기적은 코드는 컴포넌트 로드 & 업데이트 마다 실행됨
+      console.log("안녕");
+    });
 
-### Rendering & Effect Cycle
+    let [count, setCount] = useState(0);
 
-- d
-- d
+    return (
+      <button
+        onClick={() => {
+          setCount(count + 1);
+        }}
+      >
+        버튼
+      </button>
+    );
+  }
+  ```
 
 <br>
 
 ### Clean Up Function
+
+<br>
 
 <p align="center"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQWSfFN-2LaE8Ed-6MP2lsTDjGrjWOVcROKhg&usqp=CAU" width="400px"></p>
 
