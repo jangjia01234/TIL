@@ -122,3 +122,8 @@
   ```
 
 - prop는 부모로부터 전달받은 객체. color={colorname} 일 때 props의 key는 color -> props.color 형태로 사용
+<<<<<<< HEAD:documents/Session/props_and_state_session_230223.md
+=======
+
+
+>>>>>>> d3c1c47c7927b3c4d36f746b9eff9d2e3eb8cfa7:documents/Session/props_and_sass_session_230223.md
